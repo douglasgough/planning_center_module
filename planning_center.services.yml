@@ -1,0 +1,4 @@
+services:
+  planning_center.planning_center_client:
+    class: Drupal\planning_center\PlanningCenterClient
+    arguments: ['@oauth2_client.service', '@http_client_factory']

@@ -1,0 +1,7 @@
+name: 'Planning Center'
+type: module
+description: 'Integration with Planning Center church management'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:oauth2_client

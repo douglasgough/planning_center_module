@@ -1,0 +1,7 @@
+planning_center.test:
+  path: '/planning-center/test'
+  defaults:
+    _title: 'Test'
+    _controller: '\Drupal\planning_center\Controller\PlanningCenterController'
+  requirements:
+    _permission: 'access content'

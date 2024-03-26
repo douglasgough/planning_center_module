@@ -1,0 +1,27 @@
+{
+    "name": "drupal/planning_center",
+    "type": "drupal-module",
+    "description": "Integrate Planning Center church management SAAS application",
+    "keywords": [
+        "Drupal",
+        "Planning Center"
+    ],
+    "license": "GPL-2.0+",
+    "homepage": "https://www.drupal.org/project/planning_center",
+    "authors": [
+        {
+            "name": "Douglas Gough",
+            "homepage": "https://www.drupal.org/u/douglasgough",
+            "role": "Maintainer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/planning_center",
+        "source": "http://cgit.drupalcode.org/planning_center"
+    },
+    "require": {
+        "drupal/core": "^10.0.0",
+        "encoredigitalgroup/planningcenter-php-sdk": "^v1.0.0-rc12"
+    }
+}
