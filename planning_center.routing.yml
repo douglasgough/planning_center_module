@@ -6,6 +6,14 @@ planning_center.test:
   requirements:
     _permission: 'access content'
 
+planning_center.events:
+  path: '/planning-center/events'
+  defaults:
+    _title: 'Events'
+    _controller: '\Drupal\planning_center\Controller\PlanningCenterEventController'
+  requirements:
+    _permission: 'access content'
+
 entity.planning_center_event.settings:
   path: 'admin/structure/planning-center-event'
   defaults:

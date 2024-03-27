@@ -20,7 +20,7 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
  *   authorization_uri = "https://api.planningcenteronline.com/oauth/authorize",
  *   token_uri = "https://api.planningcenteronline.com/oauth/token",
  *   resource_owner_uri = "https://api.planningcenteronline.com/me",
- *   scopes = {"people,calendar"},
+ *   scopes = {"people calendar"},
  * )
  */
 class PlanningCenterOAuth extends Oauth2ClientPluginBase implements Oauth2ClientPluginRedirectInterface {
