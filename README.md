@@ -1,16 +1,19 @@
 ## INTRODUCTION
 
-The Planning Center module is a DESCRIBE_THE_MODULE_HERE.
+The module is in the early stages of development. Not ready for production.
+
+The Planning Center module integrates with planningcenteronline.com.
 
 The primary use case for this module is:
 
-- Use case #1
-- Use case #2
-- Use case #3
+- Allow churches to display up to date information from Planning Center on their website.
+- Help churches with multiple campuses to show relevant Planning Center content to each campus.
+
 
 ## REQUIREMENTS
 
-DESCRIBE_MODULE_DEPENDENCIES_HERE
+- drupal:oauth2_client
+- drupal:feeds
 
 ## INSTALLATION
 
