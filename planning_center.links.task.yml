@@ -1,0 +1,22 @@
+entity.planning_center_event.settings:
+  title: 'Settings'
+  route_name: entity.planning_center_event.settings
+  base_route: entity.planning_center_event.settings
+entity.planning_center_event.view:
+  title: 'View'
+  route_name: entity.planning_center_event.canonical
+  base_route: entity.planning_center_event.canonical
+entity.planning_center_event.edit_form:
+  title: 'Edit'
+  route_name: entity.planning_center_event.edit_form
+  base_route: entity.planning_center_event.canonical
+entity.planning_center_event.delete_form:
+  title: 'Delete'
+  route_name: entity.planning_center_event.delete_form
+  base_route: entity.planning_center_event.canonical
+  weight: 10
+entity.planning_center_event.collection:
+  title: 'Planning Center Events'
+  route_name: entity.planning_center_event.collection
+  base_route: system.admin_content
+  weight: 10

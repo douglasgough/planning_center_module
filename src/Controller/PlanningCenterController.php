@@ -31,6 +31,9 @@ final class PlanningCenterController extends ControllerBase {
 
   /**
    * Builds the response.
+   *
+   * @throws \Drupal\oauth2_client\Exception\InvalidOauth2ClientException
+   * @throws \GuzzleHttp\Exception\GuzzleException
    */
   public function __invoke(): array {
     $response = $this->planningCenterClient

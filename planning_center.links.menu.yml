@@ -1,0 +1,11 @@
+entity.planning_center_event.settings:
+  title: 'Planning Center Event'
+  description: 'Configure a Planning Center Event entity type.'
+  route_name:  entity.planning_center_event.settings
+  parent: system.admin_structure
+
+entity.planning_center_event.collection:
+  title: 'Planning Center Events'
+  description: 'List of planning center events.'
+  route_name: entity.planning_center_event.collection
+  parent: system.admin_content

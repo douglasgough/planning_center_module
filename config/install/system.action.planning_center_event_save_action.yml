@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - planning_center
+id: planning_center_event_save_action
+label: 'Save planning center events'
+type: planning_center_event
+plugin: entity:save_action:planning_center_event
+configuration: {  }
