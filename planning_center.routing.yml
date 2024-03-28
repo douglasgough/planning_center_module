@@ -13,11 +13,3 @@ planning_center.events:
     _controller: '\Drupal\planning_center\Controller\PlanningCenterEventController'
   requirements:
     _permission: 'access content'
-
-entity.planning_center_event.settings:
-  path: 'admin/structure/planning-center-event'
-  defaults:
-    _form: '\Drupal\planning_center\Form\PlanningCenterEventSettingsForm'
-    _title: 'Planning Center Event'
-  requirements:
-    _permission: 'administer planning_center_event'

@@ -1,5 +1,0 @@
-planning_center_event.add_form:
-  title: 'Add planning center event'
-  route_name: entity.planning_center_event.add_form
-  appears_on:
-    - entity.planning_center_event.collection

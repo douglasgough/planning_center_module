@@ -12,7 +12,7 @@ use Drupal\planning_center\PlanningCenterClient;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Your Class Description.
+ * Define a fetcher for planningcenteronline.com.
  *
  * @FeedsFetcher(
  *   id = "planning_center_feeds_fetcher",
@@ -25,26 +25,17 @@ class PlanningCenterFetcher extends PluginBase implements FetcherInterface {
 
   private PlanningCenterClient $planningCenterClient;
 
-  public function __construct(PlanningCenterClient $planningCenterClient) {
-    $this->planningCenterClient = $planningCenterClient;
-  }
-
-  public static function create(ContainerInterface $container): self {
-    return new self(
-      $container->get('planning_center.planning_center_client'),
-    );
-  }
-
   /**
    * {@inheritdoc}
    * @throws \Drupal\oauth2_client\Exception\InvalidOauth2ClientException
    * @throws \GuzzleHttp\Exception\GuzzleException
    */
   public function fetch(FeedInterface $feed, StateInterface $state): RawFetcherResult {
-    $response = $this->planningCenterClient
+    $client = \Drupal::getContainer()->get('planning_center.planning_center_client');
+    $response = $client
       ->getPlanningCenterClient()
       ->get('https://api.planningcenteronline.com/people/v2/people');
-    $result = json_decode($response->getBody()->getContents());
+    $result = $response->getBody()->getContents();
     if ($result !== FALSE) {
       return new RawFetcherResult($result);
     }

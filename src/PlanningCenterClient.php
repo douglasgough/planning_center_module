@@ -26,6 +26,7 @@ final class PlanningCenterClient {
    */
   public function getPlanningCenterClient(): \GuzzleHttp\Client {
     //Needs error handling
+    //Have to check for a enabled oauth2 client named planning_center_oauth
     $token = $this->oauth2ClientService->getAccessToken('planning_center_oauth')->getToken();
     return $this->httpClientFactory->fromOptions(
       ['headers' => ['Authorization' => 'Bearer '. $token]]

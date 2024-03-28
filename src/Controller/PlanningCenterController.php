@@ -7,6 +7,7 @@ namespace Drupal\planning_center\Controller;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\planning_center\PlanningCenterClient;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Drupal\planning_center\Feeds\Fetcher\PlanningCenterFetcher;
 
 /**
  * Returns responses for Planning Center routes.
